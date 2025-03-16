@@ -29,11 +29,11 @@ while running:
     screen.fill((255, 255, 255))
     screen.blit(mainclock, (75, 50))
 
-    rotated_rightarm = pygame.transform.rotate(rightarm, -minute_angle-90)
+    rotated_rightarm = pygame.transform.rotate(rightarm, -minute_angle-54)
     rightarm_rect = rotated_rightarm.get_rect(center=(400, 300)) 
     screen.blit(rotated_rightarm, rightarm_rect) 
     
-    rotated_leftarm = pygame.transform.rotate(leftarm, -second_angle-45)
+    rotated_leftarm = pygame.transform.rotate(leftarm, -second_angle-105)
     leftarm_rect = rotated_leftarm.get_rect(center=(400, 300))
     screen.blit(rotated_leftarm, leftarm_rect)
     
